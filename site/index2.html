@@ -6,24 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resebyrå</title>
-    <script>
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");}
-
- 
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var openDropdown = dropdowns[i];
-                if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-                }
-            }
-        }
-    }    
-    </script>
+    <script src="js/dropdown.js"></script>
+    <script src="js/dropdown2.js"></script>
+    <script src="js/dropdown3.js"></script>
     </head>
     <body>
     <div class="container">
@@ -43,7 +28,14 @@
         <div class="Europa">
         </div>
         <div class="Nordamerika">
-            <p>Nordamerika</p>
+        </div>
+        <div class="dropdownnordamerika">
+            <button onclick="myFunction2()" class="dropbtn">Nordamerika</button>
+            <div id="myDropdown2" class="dropdown-content">
+              <a href="#home">Canada</a>
+              <a href="#about">USA</a>
+              <a href="#contact">Mexico</a>
+            </div>
         </div>
         <div class="dropdownasien">
                 <button onclick="myFunction()" class="dropbtn">Asien</button>
@@ -54,8 +46,8 @@
                 </div>
         </div> 
         <div class="dropdowneuropa">
-            <button onclick="myFunction()" class="dropbtn">Europa</button>
-              <div id="myDropdown" class="dropdown-content">
+            <button onclick="myFunction1()" class="dropbtn">Europa</button>
+              <div id="myDropdown1" class="dropdown-content">
                 <a href="#home">Spanien</a>
                 <a href="#about">Tyskland</a>
                 <a href="#contact">Italien</a>
