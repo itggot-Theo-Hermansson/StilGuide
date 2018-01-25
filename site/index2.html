@@ -6,8 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Resebyrå</title>
-</head>
-<body>
+    <script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");}
+
+ 
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }    
+    </script>
+    </head>
+    <body>
     <div class="container">
         <nav>
             <a href="index1.html"><p>Hem</p></a>
@@ -21,15 +39,29 @@
         <div class="resbox"><p>Vart vill du resa?</p>
         </div>
         <div class="Asien">
-            <p>Asien</p>
         </div>
         <div class="Europa">
-            <p>Europa</p>
         </div>
         <div class="Nordamerika">
             <p>Nordamerika</p>
         </div>
-        <footer><p>Lorem</p></footer>
+        <div class="dropdownasien">
+                <button onclick="myFunction()" class="dropbtn">Asien</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">Indien</a>
+                  <a href="#about">Japan</a>
+                  <a href="#contact">Kina</a>
+                </div>
+        </div> 
+        <div class="dropdowneuropa">
+            <button onclick="myFunction()" class="dropbtn">Europa</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="#home">Spanien</a>
+                <a href="#about">Tyskland</a>
+                <a href="#contact">Italien</a>
+              </div>
+        </div>           
+        <footer><p>Copyright © 2018 farsansbackpacking.se</p></footer>
     </div>
     
 </body>
