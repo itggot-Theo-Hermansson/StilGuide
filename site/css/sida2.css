@@ -2,27 +2,31 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    width: 360px;
-    height: 640px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
+}
+
+
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
 }
 
 .Asien{
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    background-image: url(../img/Asien1.jpg);
 }
 
 .Europa{
     grid-row: 3 / 4;
     grid-column: 1 / 2;
-    background-image: url(../img/Europa1.jpg);
 }
 
 .Nordamerika{
     grid-row: 3 / 4;
     grid-column: 3 / 4;
-    background-image: url(../img/Nordamerika1.jpg);
 }
 
 nav{
@@ -35,29 +39,31 @@ nav{
     grid-row: span 1;
 }
 
+.nav2{
+    grid-column: 3 / 4;
+    grid-row: span 1;   
+}
+
 
 .resbox{
-    grid-row: 2 / 3 ;
-    grid-column: span 3;
-}
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
 
-footer{
-    grid-row: 5 / 6;
-    grid-column: span 3;
-    background-color: #205493;
-}
+}   
 
 p{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: black;
     margin-top: 60px;
+    font-weight: bold;
 }
 
 a{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    text-decoration: none;
 }   
 
 .dropdownasien{
@@ -82,22 +88,27 @@ a{
 }
 
 .dropbtn {
-    background-color: #205493;
-    color: white;
+    background-color: #12345a;
+    color: white    ;
     padding: 12px;
     font-size: 12px;
     border: none;
     cursor: pointer;
+    border-radius: 15px;
+    width: 200px;
+    margin: 5px;
 }
 
 .dropdown-content {
+    margin-top: 8px;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    width: 80px;
+    width: 200px;
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    border-radius: 15px;
 }
 
 .dropdown-content a {
