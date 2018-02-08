@@ -51,4 +51,13 @@ a{
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-}   
+}
+
+@media only screen and (max-device-width:900px){
+
+body{
+    background-image: url(../img/japan_mobil.jpg)
+}
+    
+}
+
