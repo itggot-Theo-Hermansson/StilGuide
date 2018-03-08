@@ -54,7 +54,8 @@ a{
         margin: 0 auto;
     }
     p{
-        font-size: 11px;
+        font-size: 13px;
+        text-align: left;
     }
 }
 
